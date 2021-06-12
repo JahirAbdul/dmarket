@@ -8,11 +8,9 @@ import java.io.File;
 
 public class MyWebInit extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-    private int maxUploadSizeInMb = 2 * 1024 * 1024; // 2 MB
-
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return new Class[] { HibernateConfig.class };
     }
 
     @Override
@@ -32,6 +30,8 @@ public class MyWebInit extends AbstractAnnotationConfigDispatcherServletInitiali
         File uploadDirectory = new File(System.getProperty("java.io.tmpdir"));
 
         // register a MultipartConfigElement
+        // 2 MB
+        int maxUploadSizeInMb = 2 * 1024 * 1024;
         MultipartConfigElement multipartConfigElement =
                 new MultipartConfigElement(uploadDirectory.getAbsolutePath(),
                         maxUploadSizeInMb, maxUploadSizeInMb * 2, maxUploadSizeInMb / 2);

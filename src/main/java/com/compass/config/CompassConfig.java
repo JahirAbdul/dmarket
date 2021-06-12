@@ -8,7 +8,7 @@ import org.springframework.web.multipart.support.StandardServletMultipartResolve
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan({"com.compass.controller"})
+@ComponentScan(basePackages={"com.compass"})
 public class CompassConfig {
 
     @Bean

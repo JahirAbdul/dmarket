@@ -13,13 +13,13 @@
     <table>
         <tr>
             <td>Name</td>
-            <td> <input type="text" name="name"/> </td>
+            <td> <input type="text" name="userName"/> </td>
         </tr>
         <tr>
             <td>Nick-Name</td>
-            <td> <input type="text" name="alias"/> </td>
+            <td> <input type="password" name="password"/> </td>
         </tr>
-        <tr>
+        <%--<tr>
             <td>Gender</td>
             <td><select name="gender">
                 <option value="male">Male</option>
@@ -40,7 +40,7 @@
                 <option value="K">K</option>
                 <option value="M">M</option>
             </select></td>
-        </tr>
+        </tr>--%>
         <tr>
             <td><input type="submit"/></td>
         </tr>

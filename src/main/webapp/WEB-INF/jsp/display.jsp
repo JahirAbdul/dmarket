@@ -9,6 +9,7 @@
 <%@ taglib prefix="logic" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <body>
+<%--
 <table>
     <tr>
         <td> Name</td>
@@ -27,5 +28,9 @@
         <td>${followersCount}</td>
     </tr>
 </table>
+--%>
+
+Added Successfully.
+
 </body>
 </html>
